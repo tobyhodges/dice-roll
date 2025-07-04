@@ -31,7 +31,7 @@ Repository = "https://github.com/tobyhodges/dice-roll"
 Issues = "https://github.com/tobyhodges/dice-roll/issues"
 
 [project.scripts]
-dice-roll = "dice_roller.main:main"
+dice-roll = "dice_roll.main:main"
 
 [project.optional-dependencies]
 dev = [
