@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dice-roll"
+version = "0.1.0"
+description = "A simple dice rolling package"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Toby Hodges", email = "tbyhdgs@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["dice", "games", "random", "cli"]
+
+[project.urls]
+Homepage = "https://github.com/tobyhodges/dice-roll"
+Repository = "https://github.com/tobyhodges/dice-roll"
+Issues = "https://github.com/tobyhodges/dice-roll/issues"
+
+[project.scripts]
+dice-roll = "dice_roller.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
