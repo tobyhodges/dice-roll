@@ -11,3 +11,7 @@ pip install dice-roller
 dice-roller 6
 
 dice-roller 20
+
+## Contact
+
+Send an email to Toby Hodges
