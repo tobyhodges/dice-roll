@@ -14,12 +14,15 @@ def roll_die(sides):
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description='Roll a single die')
-    parser.add_argument('sides', type=int, help='Number of sides on the die')
+    parser.add_argument('sides', type=int, help='Number of size on the die')
     
     args = parser.parse_args()
     
+    # Log what we're rolling
+    print(f"Rolling a {args.sides}-sided die...", file=sys.stderr)
+    
+    # Roll and output results
     result = roll_die(args.sides)
-    print(f"Rolling a {args.sides}-sided die...")
     print(result)
 
 if __name__ == "__main__":
