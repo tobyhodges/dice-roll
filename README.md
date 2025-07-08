@@ -1,2 +1,7 @@
 # dice-roll
-A simple Python package for generating dice rolls
+
+A simple command-line dice rolling utility.
+
+## Installation
+
+pip install dice-roller
